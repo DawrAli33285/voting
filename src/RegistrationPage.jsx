@@ -103,6 +103,7 @@ console.log("contestantCode")
         onSuccess(code)
   
     }catch(e){
+      console.log(e.message)
       setProcessing(false)
         
       if(e?.response?.data?.error){
